@@ -41,7 +41,6 @@ public class Driver {
 			break;
 			case 3: {
 				String desc = Keyboard.readString("Enter Task Description you wish to edit: ");
-				
 				list.removeTask(desc);
 			}
 			break;
