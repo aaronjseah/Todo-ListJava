@@ -32,6 +32,15 @@ public class Driver {
 				
 				list.addTask(task);	
 			}
+			case 2: {
+				String desc = Keyboard.readString("Enter Task Description: ");
+				list.removeTask(desc);
+			}
+			case 3: {
+				String desc = Keyboard.readString("Enter Task Description: ");
+				
+				list.removeTask(desc);
+			}
 		}
 	}
 }
