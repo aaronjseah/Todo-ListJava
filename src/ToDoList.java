@@ -39,8 +39,10 @@ public class ToDoList {
 			if (task.isComplete() == true) completedTasks.add(task);
 		return completedTasks;
 	}
-	public void display() {
-		System.out.println(getAllTasks());
+	public void viewAllTasks(ToDoList list) {
+		for(Task t: list.getAllTasks()) {
+			System.out.println(t.getDescription() + " | " + (t.isComplete()? "Completed":"Not complete"));
+		}
 	}
 } 
 //added comment
